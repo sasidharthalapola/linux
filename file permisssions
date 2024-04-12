@@ -1,0 +1,34 @@
+## File Permissions
+
+File permissions control access to files and directories on a Linux system. They specify who can read, write, or execute a file, and are represented by the symbolic notation (e.g., rwxr-xr--).
+In addition to permissions, each file also has an owner and a group associated with it.
+
+### Permissions
+
+The permission string for a file consists of three sets of permissions, each represented by three characters:
+- The first set represents the owner's permissions.
+- The second set represents the group's permissions.
+- The third set represents permissions for others (users not in the owner group).
+
+Each set of permissions consists of three characters:
+- `r` (read): Allows reading the file.
+- `w` (write): Allows modifying the file (writing to or deleting).
+- `x` (execute): Allows executing the file if it is a program or script.
+
+### Ownership
+
+Each file in Linux has an owner and a group associated with it. The owner is typically the user who created the file, while the group is a collection of users who have certain permissions to the file.
+
+To view the owner and group of a file, you can use the `ls -l` command, which displays detailed information about files and directories, including ownership and permissions.
+
+#### Example
+-rw-r--r-- 1 user1 users 1024 Apr 12 10:00 example.txt
+
+In this example, `user1` is the owner of the file `example.txt`, and `users` is the group associated with it.
+### Resources
+- [Understanding Linux File Permissions](https://linuxize.com/post/linux-file-permissions/)
+- [chmod Command Documentation](https://linux.die.net/man/1/chmod)
+
+
+
+
