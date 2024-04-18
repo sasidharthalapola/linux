@@ -61,7 +61,7 @@ SSH access is managed through configuration files and user-specific settings.
 Modify SSH Configuration
 To modify SSH server configuration settings, edit the /etc/ssh/sshd_config file:
 
-sudo nano /etc/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
 Make changes such as allowing or denying SSH access, specifying SSH port, etc.
 
 Allow SSH Access for a User
